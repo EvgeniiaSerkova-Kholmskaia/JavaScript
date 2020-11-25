@@ -44,11 +44,7 @@ console.log(word2);
 let sentence = "Its a very interesting sentence";
 let arrFromSentence = sentence.split(" ");
 let maxWord = "";
-// for (let elem of arrFromSentence) {
-//    if (elem.length > maxWord) {
-//      maxWord = elem.lenth;
-//    }
-// }
+
 for (let i = 0; i < arrFromSentence.length; i++) {
   if (arrFromSentence[i].length > maxWord.length) {
     maxWord = arrFromSentence[i];
