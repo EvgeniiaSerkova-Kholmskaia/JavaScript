@@ -41,7 +41,7 @@ let text = "Новая парадигма реальности: обереги �
 function spamWords(text, ...spam) {
   let lowerText = text.toLowerCase();
   let count = 0;
-  while 
+  while
 }
 
 // 3. Задача

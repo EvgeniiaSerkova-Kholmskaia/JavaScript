@@ -143,4 +143,11 @@ books = [
      { author: 'Лермонтов', title: 'Бородино', pageCount: 2},
  ];
 
-// Пока не поняла, как ее решать
+function sortByParam(prop, arr) {
+  let sortNum = (first, second) => first[prop] - second[prop];
+  if (prop === "pageCount") return arr.sort(sortNum);
+  let sortArr = (first, second) => first[prop].localeCompare(second[prop]);
+  return  arr.sort(sortArr);
+}
+console.log(sortByParam("title", books));
+console.log(sortByParam("pageCount", books));
