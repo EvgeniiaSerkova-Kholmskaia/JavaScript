@@ -212,9 +212,8 @@ function generateField(n) {
     document.getElementById("game-field").append(container);
 
     let priseArr = Object.keys(bigPrise);
-    while (priseArr.length > 0) {
+    for ( let prise of priseArr) {
       document.getElementById(`${Math.floor(Math.random() * (n*n))}`).setAttribute("prise", prise);
-  
     }
 
 }
