@@ -187,4 +187,38 @@ generateTable(goods);
 //     для 2й ячейки значение атрибута prise="book",
 //     для 3й ячейки значение атрибута prise="car"
 
-// Пока не поняла как делать
+let bigPrise = {
+     cat: "Кот",
+     book: "Книга",
+     car: "Машина"
+   }
+
+function generateField(n) {
+  if (n < 3 || n > 30) return;
+
+    let container = document.createElement("div");
+    container.style.width = '40vw';
+    container.style.display = 'flex';
+    container.style.flexWrap = 'wrap';
+    let size = 40/n; //'vw'
+    for (let i = 0; i < n * n; i++) {
+        let innerDiv = document.createElement("div");
+        innerDiv.style.border = '2px solid coral';
+        innerDiv.style.width = innerDiv.style.height = size + 'vw';
+        container.append(innerDiv);
+
+    }
+
+    document.getElementById("game-field").append(container);
+
+    // let priseArr = Object.keys(bigPrise);
+    // while (priseArr.length > 0) {
+    //   let randomPr = document.getElementById(`${Math.floor(Math.random() * (n*n))}`);
+    //   if (!randomPr.hasAttribute("prise")) randomPr.setAttribute("prise", priseArr.pop());
+    //   console.log(randomPr);
+    // }
+
+}
+generateField(5);
+
+// проблемы с setAttribute (Cannot read property setAttribute of null), пока не знаю, как их решить. Чужой код работает, у себя ошибку найти не могу
