@@ -191,7 +191,7 @@ let bigPrise = {
      cat: "Кот",
      book: "Книга",
      car: "Машина"
-   }
+   };
 
 function generateField(n) {
   if (n < 3 || n > 30) return;
@@ -211,12 +211,11 @@ function generateField(n) {
 
     document.getElementById("game-field").append(container);
 
-    // let priseArr = Object.keys(bigPrise);
-    // while (priseArr.length > 0) {
-    //   let randomPr = document.getElementById(`${Math.floor(Math.random() * (n*n))}`);
-    //   if (!randomPr.hasAttribute("prise")) randomPr.setAttribute("prise", priseArr.pop());
-    //   console.log(randomPr);
-    // }
+    let priseArr = Object.keys(bigPrise);
+    while (priseArr.length > 0) {
+      document.getElementById(`${Math.floor(Math.random() * (n*n))}`).setAttribute("prise", prise);
+  
+    }
 
 }
 generateField(5);
