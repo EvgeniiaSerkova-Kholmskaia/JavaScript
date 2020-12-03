@@ -196,6 +196,7 @@ let bigPrise = {
 function generateField(n) {
   if (n < 3 || n > 30) return;
 
+  let counter = 0;
     let container = document.createElement("div");
     container.style.width = '40vw';
     container.style.display = 'flex';
@@ -203,10 +204,11 @@ function generateField(n) {
     let size = 40/n; //'vw'
     for (let i = 0; i < n * n; i++) {
         let innerDiv = document.createElement("div");
+        innerDiv.setAttribute("id", counter);
         innerDiv.style.border = '2px solid coral';
         innerDiv.style.width = innerDiv.style.height = size + 'vw';
+        counter++;
         container.append(innerDiv);
-
     }
 
     document.getElementById("game-field").append(container);
@@ -218,5 +220,3 @@ function generateField(n) {
 
 }
 generateField(5);
-
-// проблемы с setAttribute (Cannot read property setAttribute of null), пока не знаю, как их решить. Чужой код работает, у себя ошибку найти не могу
