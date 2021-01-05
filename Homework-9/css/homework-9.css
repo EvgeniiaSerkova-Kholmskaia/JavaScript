@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+.cats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+h2 {
+  padding-left: 2rem;
+}
+
+.character {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  border: 5px solid coral;
+  margin: 2rem;
+  padding: 1rem;
+  max-width: 35rem;
+  background: grey;
+  border-radius: 5px;
+}
+
+.imageDiv {
+  padding-right: 1.5rem;
+  flex: 1;
+}
+
+.information p {
+  text-shadow: 0 0 1px;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  border-bottom: 3px solid coral;
+}
+
+.titleDiv {
+  border-bottom: 3px solid coral;
+}
+
+table,
+td {
+  border: 2px solid coral;
+  border-collapse: collapse;
+  background: grey;
+  padding: 0.5rem;
+}
+
+
+table {
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+}
+th {
+  background: coral;
+  cursor: pointer;
+  border: 1px solid black;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#game-field div {
+  background: grey;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+#game-field {
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+}
+
+.tableInJS {
+  margin-top: 2rem;
+}
+
+.clickDes {
+  font-size: 18px;
+  text-align: center;
+}
+
+.clickDes2 {
+  font-size: 18px;
+  text-shadow: 0 0 1px;
+  color: #e00000;
+  text-align: center;
+}
+
+.clickDes3 {
+  color: white;
+  font-size: 18px;
+  text-shadow: 0 0 2px;
+  text-align: center;
+}
+
+h1 {
+  margin-left: 5rem;
+}
+
+h2 {
+  margin-left: 5rem;
+}
